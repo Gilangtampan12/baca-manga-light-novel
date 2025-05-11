@@ -1,0 +1,634 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+  padding: 20px;
+  animation: fadeIn 1s ease-in-out; /* Animasi saat memuat halaman */
+}
+
+/* Animasi untuk memuat konten */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* Container utama */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: slideUp 0.8s ease-out; /* Animasi muncul dari bawah */
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 40px;
+  animation: fadeInHeader 1.5s ease-out; /* Animasi judul header */
+}
+
+@keyframes fadeInHeader {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #4b4b4b;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+
+/* Button dan link hover */
+button {
+  padding: 12px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-3px); /* Efek angkat saat hover */
+}
+
+#stories {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.story-card {
+  display: flex;
+  flex-direction: column;
+  background: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.story-card:hover {
+  transform: scale(1.03);
+}
+
+.story-card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.story-card .content {
+  padding: 10px;
+}
+
+/* Halaman Reader */
+#reader {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInReader 1s ease-out; /* Animasi muncul halaman reader */
+}
+
+@keyframes fadeInReader {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+#reader-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+  animation: fadeInTitle 1s ease-out; /* Animasi judul bab */
+}
+
+@keyframes fadeInTitle {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#reader-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+#reader-chapters ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#reader-chapters li {
+  margin: 10px 0;
+}
+
+#reader-chapters a {
+  text-decoration: none;
+  color: #007BFF;
+  font-size: 1.1rem;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#reader-chapters a:hover {
+  color: #0056b3;
+  transform: translateX(5px); /* Efek geser saat hover */
+}
+
+#reader-text {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #444;
+  animation: fadeInContent 1s ease-out; /* Animasi konten bab */
+}
+
+@keyframes fadeInContent {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#reader-text img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+  animation: zoomIn 0.5s ease-out; /* Efek zoom-in gambar */
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(0.9);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  #story-list a {
+    font-size: 1.2rem;
+  }
+
+  #reader-title {
+    font-size: 2rem;
+  }
+
+  #reader-description {
+    font-size: 1rem;
+  }
+
+  #reader-chapters a {
+    font-size: 1rem;
+  }
+}
+.genre-btn {
+  margin: 5px;
+  padding: 6px 14px;
+  border: none;
+  border-radius: 20px;
+  background-color: #edf2f7;
+  color: #2d3748;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.genre-btn:hover {
+  background-color: #cbd5e0;
+}
+
+.genre {
+  display: inline-block;
+  background: #bee3f8;
+  color: #2c5282;
+  font-size: 0.75em;
+  padding: 4px 10px;
+  border-radius: 20px;
+  margin-left: 5px;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.genre:hover {
+  background: #90cdf4;
+  transform: scale(1.05);
+}
+/* Search Box */
+.search-box {
+  width: 100%;
+  max-width: 450px;
+  margin: 30px auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  animation: slideInSearch 1s ease-out;
+}
+
+@keyframes slideInSearch {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.search-box input[type="text"] {
+  width: 100%;
+  padding: 14px 50px 14px 20px;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.search-box input[type="text"]:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 12px rgba(0, 123, 255, 0.3);
+  background-color: #fdfdfd;
+}
+
+.search-box button {
+  position: absolute;
+  right: 15px;
+  background: none;
+  border: none;
+  color: #007BFF;
+  font-size: 1.4rem;
+  cursor: pointer;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.search-box button:hover {
+  color: #0056b3;
+  transform: scale(1.1);
+}
+
+/* Gaya untuk container utama */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    animation: fadeIn 1.5s ease-out;
+}
+
+/* Gaya untuk card */
+.contact-card {
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 320px;
+    padding: 30px;
+    text-align: center;
+    animation: slideIn 1s ease-out, cardHover 0.3s ease-in-out;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+    position: relative; /* Untuk animasi tambahan pada bawah card */
+}
+
+/* Efek saat card di-hover */
+.contact-card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+}
+
+/* Efek warna tambahan di bawah card */
+.contact-card::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10px;
+    background: 
+        linear-gradient(45deg, #ff7e5f, #feb47b),  /* 45deg Gradasi */
+        linear-gradient(90deg, #0A1ACD, #AAB1F8),  /* 90deg Gradasi */
+        linear-gradient(180deg, #34e89e, #0f3443); /* 180deg Gradasi */
+    background-position: top, center, bottom;
+    background-size: 100% 33%, 100% 33%, 100% 33%;
+    background-repeat: no-repeat;
+    border-radius: 0 0 15px 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Saat card di-hover, efek gradasi muncul */
+.contact-card:hover::after {
+    opacity: 1;
+}
+
+/* Gaya untuk gambar profil */
+.contact-image {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    animation: bounce 2s ease-in-out infinite alternate, scaleUp 1.5s ease-in-out;
+}
+
+/* Gaya untuk judul */
+.contact-info h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 600;
+    animation: fadeInText 1.2s ease-out;
+}
+
+/* Gaya untuk deskripsi */
+.contact-info p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    color: #666;
+    animation: fadeInText 1.4s ease-out;
+}
+
+/* Gaya untuk tombol WhatsApp */
+.whatsapp-button {
+    display: inline-block;
+    background-color: #25D366;
+    color: #fff;
+    padding: 14px 24px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    animation: fadeInButton 1.6s ease-out;
+}
+
+/* Efek hover pada tombol WhatsApp */
+.whatsapp-button:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+/* Animasi FadeIn untuk elemen masuk */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Animasi slideIn untuk card */
+@keyframes slideIn {
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Animasi bounce untuk gambar */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Animasi scaleUp untuk gambar */
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+/* Animasi untuk fadeIn pada judul dan deskripsi */
+@keyframes fadeInText {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi fadeIn untuk tombol WhatsApp */
+@keyframes fadeInButton {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Animasi card hover lebih interaktif */
+@keyframes cardHover {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+/* Footer Styling */
+.footer {
+  background: linear-gradient(135deg, #1b1b2f, #162447);
+  color: #f5f5f5;
+  padding: 50px 20px 30px;
+  font-family: 'Poppins', sans-serif;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+/* Animasi Fade-in */
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Layout Footer */
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  text-align: center;
+}
+
+/* Footer Brand */
+.footer-brand h2 {
+  font-size: 24px;
+  color: #ffce00;
+  margin-bottom: 10px;
+}
+
+.footer-brand p {
+  font-size: 15px;
+  color: #ddd;
+}
+
+/* Links */
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links li {
+  margin: 8px 0;
+}
+
+.footer-links span {
+  text-decoration: none;
+  color: #ccc;
+  font-size: 15px;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-links span:hover {
+  color: #ffce00;
+  text-shadow: 0 0 10px #ffce00;
+}
+
+/* Social Media Icons */
+.footer-socials {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  background-color: #2e2e3a;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-icon.facebook {
+  background-image: url('fb.png');
+  background-size: cover;
+}
+
+.social-icon.instagram {
+  background-image: url('ig.png');
+  background-size: cover;
+}
+
+.social-icon.whatsapp {
+  background-image: url('wa.png');
+  background-size: cover;
+}
+
+.footer-socials .social-icon:hover {
+  transform: scale(1.1) rotate(15deg);
+  box-shadow: 0 4px 10px rgba(255, 206, 0, 0.4);
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  color: #aaa;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+}
