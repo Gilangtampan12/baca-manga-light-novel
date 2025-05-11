@@ -608,11 +608,6 @@ button:hover {
   background-size: cover;
 }
 
-.social-icon.instagram {
-  background-image: url('ig.png');
-  background-size: cover;
-}
-
 .social-icon.whatsapp {
   background-image: url('wa.png');
   background-size: cover;
