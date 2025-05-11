@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Baca Manga & Light Novel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Baca Manga & Light Novel</h1>
+    </header>
+
+    <!-- Filter Genre & Pencarian -->
+    <div id="controls">
+      <div id="genre-filter">
+        <button class="genre-btn active" data-genre="Semua">Semua</button>
+        <button class="genre-btn" data-genre="Aksi">Aksi</button>
+        <button class="genre-btn" data-genre="Fantasi">Fantasi</button>
+        <button class="genre-btn" data-genre="Komedi">Komedi</button>
+        <button class="genre-btn" data-genre="18+">18+</button>
+        <button class="genre-btn"data-genre="Isekai">Isekai</button>
+        <button class="genre-btn" data-genre="Reinkarnasi">Reinkarnasi</button>
+        <button class="genre-btn" data-genre="Romance">Romantis</button>
+        <button class="genre-btn" data-genre="Horor">Horor</button>
+      </div>
+      <div class="search-box">
+      <input type="text" id="search-box" placeholder="Cari judul cerita...">
+      </div>
+    </div>
+
+    <!-- Daftar Cerita -->
+    <div id="story-list">
+      <h2>Pilih Cerita</h2>
+      <ul id="stories">
+        <!-- Diisi oleh JavaScript -->
+      </ul>
+    </div>
+
+    <!-- Pembaca Cerita -->
+    <div id="reader" style="display: none;">
+      <button id="back-button">Kembali</button>
+      <h2 id="reader-title"></h2>
+      <p id="reader-description"></p>
+      <div id="reader-chapters">
+        <h3>Daftar Bab:</h3>
+        <ul id="chapter-list"></ul>
+      </div>
+      <div id="reader-text"></div>
+    </div>
+  </div>
+    
+    <div class="contact-container">
+  <div class="contact-card">
+    <img src="wa.png" alt="Gambar Kontak" class="contact-image">
+    <div class="contact-info">
+      <h2>Hubungi Kami</h2>
+      <p>Anda bisa request judul anime, tambahin season lagi dan lain lain</p>
+      <a href="https://wa.me/6288973461209" target="_blank" class="whatsapp-button">
+        <span>Hubungi via WhatsApp</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-brand">
+      <h2>Baca Manga & Light Novel</h2>
+      <p>Tempat terbaik untuk menikmati cerita favoritmu kapan saja!</p>
+    </div>
+    <div class="footer-links">
+      <ul>
+        <li><span>Beranda</span></li>
+        <li><span>Genre</span></li>
+        <li><span>Light Novel</span></li>
+        <li><span>Kontak</span></li>
+      </ul>
+    </div>
+    <div class="footer-socials">
+      <div class="social-icon facebook"></div>
+      <div class="social-icon instagram"></div>
+      <div class="social-icon whatsapp"></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 Baca Manga & Light Novel. Dibuat oleh yudha untuk para pecinta cerita.</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
