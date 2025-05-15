@@ -286,6 +286,57 @@ const stories = [
     "Tiga tahun kemudian, Kirana membuka kotak berisi seragam SMA lamanya. Di dalamnya masih tersimpan surat Arga, lusuh tapi utuh. Ia tersenyum. <br><br>Di luar rumah, suara motor berhenti. <br>“Kirana?” suara itu familiar. <br>Kirana keluar. <br>Di depan pagar berdiri seorang pria, rambut sedikit lebih rapi, tapi dengan senyum yang masih sama. <br>“Aku balik. Dan aku masih sendiri,” ucap Arga. <br>Kirana tertawa pelan. “Aku juga.” <br>Langit sore itu, meski tak secerah dulu, menjadi saksi perasaan yang tak pernah benar-benar hilang.",
     "Kadang, perasaan tumbuh dari hal kecil—dari salah paham, perdebatan, hingga candaan. Namun dari situlah muncul kejujuran yang tidak dibuat-buat."
   ]
+},
+{
+title: "Nyanyian Cahaya di Negeri Aetherion",
+genre: "Romance",
+image: "ta.png",
+description: "deskripsi: Nyanyian Cahaya di Negeri Aetherion adalah kisah romantis berlatar dunia magis di mana pulau-pulau melayang di langit dan cahaya memiliki kekuatan menyembuhkan jiwa. Di tengah konflik antara dua kerajaan langit, seorang penyanyi cahaya bernama Liora bertemu dengan pangeran elf bernama Kael yang terasing dari takdirnya. Bersama-sama, mereka melintasi batas-batas sihir dan takdir, menemukan cinta sejati yang mampu menyatukan dua dunia yang telah lama terpecah. Kisah ini adalah perjalanan penuh keajaiban, pengorbanan, dan janji abadi yang diikat oleh cahaya dan cinta.",
+chapters: [
+  "Bab 1: Cahaya yang Berbisik",
+  "Bab 2: Sayap yang Tersesat",
+  "Bab 3: Akademi Angin dan Rasa yang Bertumbuh",
+  "Bab 4: Ciuman Pertama di Bawah Bintang",
+  "Bab 5: Hutan Waktu dan Rahasia Cermin Jiwa",
+  "Bab 6: Pengorbanan dan Bayangan yang Bangkit",
+  "Bab 7: Menara Aetherion dan Janji Dua Jiwa",
+  "Bab 8: Pernikahan di Langit Ketujuh",
+  "Bab 9: Rumah di Antara Awan",
+  "Bab 10: Nyanyian yang Tak Pernah Padam (Tamat)",
+],
+content: [
+    "Di langit terapung pulau Lirael, Lyra hidup dalam damai bersama kekuatan anehnya—kemampuan mendengar bisikan dari cahaya. Setiap pagi dan senja, suara-suara itu memeluknya dengan lagu-lagu yang tak bisa dimengerti orang lain. Ia merasa sendiri, sampai suatu hari sebuah cahaya pecah di langit dan tubuh bersayap jatuh dari awan. <br><br>Pemuda itu adalah Erevan, pingsan dan berdarah, dengan sayap koyak dan ingatan yang kabur. Saat Lyra menyentuhnya, cahaya di sekitarnya bergetar seperti menyambut kembali bagian yang telah lama hilang. Ia mendengar suara baru dalam cahaya—dalam dan sedih, seolah menunggu ribuan tahun untuk didengar kembali.",
+    "Erevan diburu oleh mimpi-mimpi buruk dan bayangan dari masa lalunya yang tak bisa ia ingat. Namun setiap kali Lyra berada di dekatnya, potongan ingatan perlahan kembali: kerajaan langit yang terbakar, dan suara nyanyian yang serupa dengan suara Lyra. <br><br>Mereka mulai mencari tahu asal-usul Erevan, hingga ditemukan bahwa ia adalah pewaris kerajaan Aetherion yang hilang. Lyra pun sadar bahwa takdirnya terikat erat dengan Erevan—ia bukan hanya seorang gadis langit, tapi Penjaga Cahaya terakhir yang diciptakan untuk melindungi sang pewaris.",
+    "Mereka pergi ke Akademi Angin, tempat Erevan dulu belajar sihir langit. Di sana, gurunya yang sudah tua menyambut mereka dengan haru dan memberikan gulungan nyanyian kuno: “Nyanyian Jiwa”, hanya bisa dinyanyikan oleh dua jiwa yang benar-benar menyatu. <br><br>Saat mereka berlatih menyanyikannya, Erevan dan Lyra mulai merasakan ikatan yang lebih dalam dari sihir. Mereka tidak hanya memahami satu sama lain—mereka melengkapi satu sama lain. Cinta mulai tumbuh, diam-diam, seperti bunga yang mekar di bawah cahaya pagi.",
+    "Dalam festival langit, di tengah tarian bintang dan suara musik, Erevan dan Lyra akhirnya mengakui perasaan mereka. Di puncak menara kristal, di bawah langit penuh cahaya, Erevan mencium Lyra untuk pertama kalinya. <br><br>Ciuman itu membuka kekuatan yang tersegel dalam diri mereka. Nyanyian Jiwa bergetar dari dalam hati mereka dan menciptakan cahaya yang membelah awan. Tapi mereka tahu—cinta ini bukan hanya anugerah, tapi juga ujian, karena kegelapan mulai bangkit dari bawah Aetherion yang runtuh.",
+    "Mereka masuk ke Hutan Waktu, tempat arwah para leluhur Aetherion tinggal. Di sana, Lyra melihat bayangan dirinya dari masa lalu—wujudnya diciptakan dari nyanyian terakhir Ratu Aetherion, ibu Erevan, untuk melindungi sang putra. <br><br>Erevan pun mengetahui bahwa sebelum keruntuhan, ia pernah mencintai roh cahaya bernama Elenya—yang kini menjadi Lyra. Mereka bukan sekadar bertemu karena takdir, tapi karena cinta yang menembus waktu. Air mata Lyra jatuh saat tahu cinta mereka telah terjadi berkali-kali, namun selalu terpisah.",
+    "Saat bayangan jahat bernama Noctar—penghianat istana—bangkit kembali, Erevan memutuskan menyerahkan dirinya agar Lyra tetap hidup. Namun Lyra menolak membiarkannya berkorban sendirian. Mereka menggabungkan kekuatan nyanyian mereka untuk memurnikan langit yang mulai retak. <br><br>Dalam pertempuran itu, sihir Erevan terkuras habis. Ia pingsan di pelukan Lyra, tubuhnya nyaris menghilang. Tapi cinta Lyra memanggilnya kembali melalui nyanyian cahaya—untuk pertama kalinya, sihir itu menjawab bukan karena darah bangsawan, tapi karena cinta sejati.",
+    "Mereka tiba di reruntuhan Aetherion, dan dengan kekuatan terakhir dari nyanyian mereka, mereka menghidupkan kembali jantung kerajaan. Langit yang dulu gelap berubah terang, dan semua pulau langit yang hilang kembali ke orbitnya. <br><br>Rakyat langit berkumpul, menyaksikan dua jiwa yang menyatukan kembali Aetherion. Erevan berlutut di depan Lyra, tidak sebagai pewaris takhta, tapi sebagai pria yang mencintainya. Ia melamarnya dengan cincin cahaya yang dibentuk dari nyanyian mereka.",
+    "Pernikahan mereka diadakan di Langit Ketujuh, tempat cahaya bertemu angin. Semua kerajaan langit hadir, bahkan bintang-bintang bersinar lebih terang malam itu. Lyra memakai gaun tenun cahaya, dan Erevan mengenakan jubah bangsawan yang telah diperbaiki dengan sulaman Lyra. <br><br>Saat mereka saling mengucapkan janji, langit dipenuhi nyanyian ribuan suara. Erevan mencium Lyra bukan hanya sebagai pengantin, tapi sebagai sahabat jiwa yang telah melampaui waktu, sihir, dan kematian. Cinta mereka menyatukan langit dan bumi.",
+    "Mereka memilih untuk tidak tinggal di istana, melainkan membangun rumah kecil di tepi awan, dekat ladang bunga Aether. Di sana, mereka hidup sebagai pasangan biasa yang menanam, tertawa, dan menyanyikan lagu untuk anak-anak langit. <br><br>Namun hati mereka tetap terhubung dengan Aetherion. Mereka menjadi simbol cinta sejati dan penjaga damai, mengajarkan bahwa kekuatan terbesar bukan berasal dari sihir, tapi dari hati yang memilih untuk tetap setia.",
+    "Bertahun-tahun kemudian, Aetherion menjadi kerajaan damai. Anak-anak belajar menyanyi kepada cahaya, dan nama Lyra dan Erevan dikenang dalam nyanyian baru: lagu tentang dua jiwa yang menemukan rumah dalam satu sama lain. <br><br>Dan setiap senja, ketika langit memerah dan angin menyapu lembut, suara nyanyian itu terdengar di seluruh langit. Bukan nyanyian perang atau sihir, tapi nyanyian cinta—yang tak pernah padam."
+]
+},
+{
+  title: "Aku menjadi Pahlawan untuk melindungi ibu ku",
+  genre: "Hentai",
+  image:"te.png",
+  description: "Tentang seorang anak yang melindungi ibu nya karena diperkosa orang",
+  chapters: [
+    "Bab 1: Awal Pertemuan",
+    "Bab 2: Bertemu Seorang Guru",
+    "Bab 3: Pergi Ke MasaLalu",
+    "Bab 4: menyelamatkan ibu nya",
+    "Bab 5: End",
+  ],
+  content:[
+    "Ryuu Adalah Anak Tunggal Yang tinggal bersama ibuku, Ayah ku telah lama meninggal sejak umur ku masih umur 3 tahun. <br><br>Saya diberi kekuatan oleh dewa yaitu sihir",
+    "Ryuu Sekarang Berumur 16 Tahun, Ryuu Disuruh sama Ibu nya untuk berkelana mencari seorang guru yang berbakat semua sihir diKerjaan Peria, <br><br>Ryuu Bertemu Kakek Tua Yang Sedang Sekarat diJalan, Ryuu Menolong Kakek Tua itu Dengan cara mengasih sisa makanan nya dan Minuman nya, Besok nya Kakek Tua Itu ternyata Bisa Semua Sihir dikerajaan Peria, Kakek Tua itu mengajarkan Ryuu Sihir Pergi Ke Masalalu dan Sihir lain lain nya",
+    "Umur Ryuu sekarang Sudah Berumur 20 Tahun, Sekarang Dia Bisa menggunakan sihir sihir yang diajarkan oleh Kakek Tua itu <br><br>Ryuu Bertekat Untuk Pergi KeMasaLalu Untuk Bertemu Dia di Umur Yang 5 Tahun",
+    "Ryuu berhasil ke masalalu nya kemudian dia melihat ibu nya diajak kesuatu tempat oleh orang ga dikenal, ryuu diam diam mengikuti ibu nya dengan kekuatan sihir nya",
+    "Ibu nya ryuu diajak kesuatu tempat kemudian ryuu melihat ibu nya sedang diperkosa oleh 6 orang laki laki, dia ingin menolong ibunya tetapi dia bingung caranya untuk menolong ibu nya tanpa ketahuan, bagaimana ryuu menolong ibu nya tanpa ketahuan dri 6 orang itu?",
+    "Kemudian Ryuu menggunakan sihir bayangan, bayangan nya menarik 6 orang itu, 6 orang itu terjatuh <br><br>Kemudian ryuu menarik ibu nya ke sihir yang ia gunakan yaitu masa depan, Ibu nya dibawa oleh Ryuu kemasa depan supaya tidak dikejar oleh 6 orang itu, Raja di kerajaan Peria membawa ryuu ke dalam kerajaan untuk menjelaskan apa yang terjadi kepada ryuu, Raja nya pun mendengar cerita ryuu sampe habis, kemudian ryuu ditawarkan oleh raja untuk menjadi pahlawan, kemudian dia menerima tawaran itu, dan ryuu sekarang sudah menjadi pahlawan"
+  ]
 }
 ];
 
