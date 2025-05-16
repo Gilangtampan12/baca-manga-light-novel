@@ -335,7 +335,23 @@ content: [
     "Umur Ryuu sekarang Sudah Berumur 20 Tahun, Sekarang Dia Bisa menggunakan sihir sihir yang diajarkan oleh Kakek Tua itu <br><br>Ryuu Bertekat Untuk Pergi KeMasaLalu Untuk Bertemu Dia di Umur Yang 5 Tahun",
     "Ryuu berhasil ke masalalu nya kemudian dia melihat ibu nya diajak kesuatu tempat oleh orang ga dikenal, ryuu diam diam mengikuti ibu nya dengan kekuatan sihir nya",
     "Ibu nya ryuu diajak kesuatu tempat kemudian ryuu melihat ibu nya sedang diperkosa oleh 6 orang laki laki, dia ingin menolong ibunya tetapi dia bingung caranya untuk menolong ibu nya tanpa ketahuan, bagaimana ryuu menolong ibu nya tanpa ketahuan dri 6 orang itu?",
-    "Kemudian Ryuu menggunakan sihir bayangan, bayangan nya menarik 6 orang itu, 6 orang itu terjatuh <br><br>Kemudian ryuu menarik ibu nya ke sihir yang ia gunakan yaitu masa depan, Ibu nya dibawa oleh Ryuu kemasa depan supaya tidak dikejar oleh 6 orang itu, Raja di kerajaan Peria membawa ryuu ke dalam kerajaan untuk menjelaskan apa yang terjadi kepada ryuu, Raja nya pun mendengar cerita ryuu sampe habis, kemudian ryuu ditawarkan oleh raja untuk menjadi pahlawan, kemudian dia menerima tawaran itu, dan ryuu sekarang sudah menjadi pahlawan"
+  ]
+},
+{
+  title: "Aku menjadi pahlawan untuk melindungi ibuku season 2",
+  genre: "Hentai",
+  image: "t2.png",
+  description: "Season 2 dari cerita Aku Menjadi seorang pahlawan untiuk melindungi ibu ku",
+  chapters: [
+    "Bab 6: Menjadi Seorang pahlawan",
+    "Bab 7: Dikasih Hadiah Sama Raja",
+    "Bab 8: End",
+  ],
+  content: [
+    "Kemudian Ryuu menggunakan sihir bayangan, bayangan nya menarik 6 orang itu, 6 orang itu terjatuh <br><br>Kemudian ryuu menarik ibu nya ke sihir yang ia gunakan yaitu masa depan, Ibu nya dibawa oleh Ryuu kemasa depan supaya tidak dikejar oleh 6 orang itu, Raja di kerajaan Peria membawa ryuu ke dalam kerajaan untuk menjelaskan apa yang terjadi kepada ryuu, Raja nya pun mendengar cerita ryuu sampe habis, kemudian ryuu ditawarkan oleh raja untuk menjadi pahlawan, kemudian dia menerima tawaran itu, dan ryuu sekarang sudah menjadi pahlawan",
+    "Selain menjadi pahlawan, Ryuu diberi hadiah sama raja yaitu wilayah di suatu negara, Dia pun menerima hadiah itu dari raja,Ryuu pun menjadi raja di kerajaan poria",
+    "Ryuu pun mengajak ibu nya untuk berkelana tetapi ibu nya sudah tua, kemudian ryuu berkelana bersama 2 pengawal dan 1 mata², ditenga perjalanan dia menemukan kerajaan dipimpin oleh ras elf <br><br>Kerajaan elf sedang berperang sama kerajaan rosia dikarenakan kerajaaan rosia yang memulai duluan, kemudian ryuu ingin menolong kerajaan elf tersebut, lalu dia memerintahkan 1 mata mata untuk membawa pasukan kerajaan yang dipimpin oleh ryuu",
+    "Pasukan kerajaan pun sampai, lalu ryuu memerintahkan ke pasukan nya untuk membantu kerajaan elf <br><br>//singkat cerita<br><br>Pasukan ryuu pun telah mengalahkan pasukan dari rosia, kemudian raja elf mendatangi si ryuu untuk menawarkan kerja sama,Kemudian dia diberi hadiah oleh kerajaan elf karena sudah membantu, hadiah nya adalah seorang cewe ras elf, bagaimana perjalanan ryuu selanjutnya?",
   ]
 }
 ];
