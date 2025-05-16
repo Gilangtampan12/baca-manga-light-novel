@@ -66,11 +66,74 @@ header {
 }
 
 h1 {
-  font-size: 2.5rem;
-  color: #4b4b4b;
+  font-size: 3rem;
+  font-weight: 800;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  font-weight: 700;
+  letter-spacing: 3px;
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  position: relative;
+  background: linear-gradient(270deg, #ff8a00, #e52e71, #9b00ff);
+  background-size: 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientFlow 6s ease-in-out infinite, fadeInUp 1.3s ease-out forwards;
+  opacity: 0;
+  text-shadow: 0 0 10px rgba(255, 138, 0, 0.4),
+               0 0 20px rgba(229, 46, 113, 0.3),
+               0 0 40px rgba(155, 0, 255, 0.2);
+  transition: transform 0.4s ease, text-shadow 0.4s ease;
+  cursor: default;
+}
+
+h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, #ff8a00, #e52e71, #9b00ff);
+  background-size: 200%;
+  animation: underlineWave 4s linear infinite;
+  border-radius: 2px;
+  opacity: 0.9;
+}
+
+h1:hover {
+  transform: scale(1.06);
+  text-shadow: 0 0 15px rgba(255, 138, 0, 0.7),
+               0 0 35px rgba(229, 46, 113, 0.6),
+               0 0 60px rgba(155, 0, 255, 0.5);
+}
+
+@keyframes gradientFlow {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes underlineWave {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
 }
 
 /* Button dan link hover */
@@ -145,17 +208,26 @@ button:hover {
 }
 
 #reader-title {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 20px;
-  animation: fadeInTitle 1s ease-out; /* Animasi judul bab */
+  font-size: 3rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  background-size: 200%;
+  animation: fadeInUp 1s ease-out forwards, gradientMove 6s linear infinite;
+  box-shadow: 0 0 20px rgba(0, 198, 255, 0.4);
+  opacity: 0;
+  display: inline-block;
 }
 
-@keyframes fadeInTitle {
+/* Animasi muncul */
+@keyframes fadeInUp {
   0% {
     opacity: 0;
-    transform: translateY(-30px);
+    transform: translateY(40px);
   }
   100% {
     opacity: 1;
@@ -163,31 +235,92 @@ button:hover {
   }
 }
 
+/* Gerakan gradasi latar */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
 #reader-description {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 20px;
+  font-size: 1.25rem;
+  color: #444;
+  line-height: 1.6;
+  max-width: 800px;
+  margin: 0 auto 30px auto;
+  text-align: center;
+  padding: 15px 25px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeSlideIn 1.2s ease-out forwards;
+  opacity: 0;
+}
+
+/* Animasi lembut saat muncul */
+@keyframes fadeSlideIn {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 #reader-chapters ul {
-  list-style-type: none;
+  list-style: none;
   padding: 0;
+  margin: 0 auto;
+  max-width: 600px;
 }
 
 #reader-chapters li {
-  margin: 10px 0;
+  margin: 12px 0;
+  background: #f9f9f9;
+  padding: 12px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#reader-chapters li:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
 }
 
 #reader-chapters a {
   text-decoration: none;
-  color: #007BFF;
+  color: #1e90ff;
   font-size: 1.1rem;
-  transition: color 0.3s ease, transform 0.3s ease;
+  font-weight: 600;
+  display: inline-block;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+#reader-chapters a::after {
+  content: '';
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: #1e90ff;
+  transition: width 0.3s ease;
 }
 
 #reader-chapters a:hover {
-  color: #0056b3;
-  transform: translateX(5px); /* Efek geser saat hover */
+  color: #0c6cd4;
+}
+
+#reader-chapters a:hover::after {
+  width: 100%;
 }
 
 #reader-text {
@@ -257,52 +390,62 @@ button:hover {
   }
 }
 .genre-btn {
-  margin: 5px;
-  padding: 6px 14px;
+  margin: 6px;
+  padding: 8px 18px;
   border: none;
-  border-radius: 20px;
-  background-color: #edf2f7;
-  color: #2d3748;
+  border-radius: 30px;
+  background: linear-gradient(135deg, #a8dadc, #457b9d);
+  color: #f1faee;
+  font-weight: 600;
+  font-size: 0.9rem;
   cursor: pointer;
-  transition: background 0.3s ease;
+  box-shadow: 0 4px 8px rgba(70, 123, 157, 0.4);
+  transition: background 0.4s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .genre-btn:hover {
-  background-color: #cbd5e0;
+  background: linear-gradient(135deg, #457b9d, #1d3557);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(29, 53, 87, 0.6);
 }
 
 .genre {
   display: inline-block;
-  background: #bee3f8;
-  color: #2c5282;
-  font-size: 0.75em;
-  padding: 4px 10px;
-  border-radius: 20px;
-  margin-left: 5px;
-  transition: background 0.3s ease, transform 0.3s ease;
+  background: #90cdf4;
+  color: #1a365d;
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  border-radius: 25px;
+  margin-left: 8px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(144, 205, 244, 0.5);
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  user-select: none;
 }
 
 .genre:hover {
-  background: #90cdf4;
-  transform: scale(1.05);
+  background: #63b3ed;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(99, 179, 237, 0.7);
 }
 /* Search Box */
 .search-box {
   width: 100%;
-  max-width: 450px;
-  margin: 30px auto;
+  max-width: 480px;
+  margin: 35px auto;
   display: flex;
   align-items: center;
   position: relative;
-  animation: slideInSearch 1s ease-out;
+  animation: slideInSearch 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  opacity: 0;
 }
 
 @keyframes slideInSearch {
-  0% {
+  from {
     opacity: 0;
-    transform: translateY(-20px);
+    transform: translateY(-25px);
   }
-  100% {
+  to {
     opacity: 1;
     transform: translateY(0);
   }
@@ -310,36 +453,39 @@ button:hover {
 
 .search-box input[type="text"] {
   width: 100%;
-  padding: 14px 50px 14px 20px;
-  border: 2px solid #ddd;
-  border-radius: 30px;
-  font-size: 1rem;
-  background-color: #fff;
-  color: #333;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  transition: all 0.3s ease;
+  padding: 14px 55px 14px 22px;
+  border: 2px solid #ccc;
+  border-radius: 35px;
+  font-size: 1.1rem;
+  background-color: #fafafa;
+  color: #222;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  transition: border-color 0.4s ease, box-shadow 0.4s ease, background-color 0.3s ease;
+  outline: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .search-box input[type="text"]:focus {
-  border-color: #007BFF;
-  box-shadow: 0 0 12px rgba(0, 123, 255, 0.3);
-  background-color: #fdfdfd;
+  border-color: #4a90e2;
+  box-shadow: 0 0 18px rgba(74, 144, 226, 0.5);
+  background-color: #fff;
 }
 
 .search-box button {
   position: absolute;
-  right: 15px;
-  background: none;
+  right: 18px;
+  background: transparent;
   border: none;
-  color: #007BFF;
-  font-size: 1.4rem;
+  color: #4a90e2;
+  font-size: 1.5rem;
   cursor: pointer;
-  transition: color 0.3s ease, transform 0.2s ease;
+  transition: color 0.3s ease, transform 0.25s ease;
+  user-select: none;
 }
 
 .search-box button:hover {
-  color: #0056b3;
-  transform: scale(1.1);
+  color: #2c6adf;
+  transform: scale(1.15);
 }
 
 /* Gaya untuk container utama */
@@ -605,6 +751,11 @@ button:hover {
 
 .social-icon.facebook {
   background-image: url('fb.png');
+  background-size: cover;
+}
+
+.social-icon.instagram {
+  background-image: url('ig.png');
   background-size: cover;
 }
 
