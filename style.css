@@ -156,35 +156,91 @@ button:hover {
 
 #stories {
   list-style: none;
-  padding: 0;
+  margin: 0 auto;
+  padding: 40px 20px;
+  max-width: 1600px;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 32px;
+  background: linear-gradient(to bottom right, #fafafa, #eaeaea);
 }
 
 .story-card {
   display: flex;
   flex-direction: column;
-  background: #f9f9f9;
-  border-radius: 10px;
+  position: relative;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 24px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: transform 0.2s;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 0.8s ease forwards;
+  opacity: 0;
+  transform: translateY(40px);
 }
 
 .story-card:hover {
-  transform: scale(1.03);
+  transform: translateY(-10px) scale(1.025);
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+.story-card::after {
+  content: '';
+  position: absolute;
+  top: 0; left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(120deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.2) 100%);
+  transform: skewX(-25deg);
+  transition: all 0.8s ease;
+}
+
+.story-card:hover::after {
+  left: 125%;
 }
 
 .story-card img {
   width: 100%;
-  height: 160px;
+  height: 220px;
   object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.story-card:hover img {
+  transform: scale(1.08);
 }
 
 .story-card .content {
-  padding: 10px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.story-card .content h3 {
+  margin: 0;
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+}
+
+.story-card .content p {
+  margin: 10px 0 0;
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Fade-in animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Halaman Reader */
@@ -488,153 +544,85 @@ button:hover {
   transform: scale(1.15);
 }
 
-/* Gaya untuk container utama */
+/* Kontainer utama */
 .contact-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 60px 20px;
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
     animation: fadeIn 1.5s ease-out;
 }
 
-/* Gaya untuk card */
+/* Kartu kontak */
 .contact-card {
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
-    width: 320px;
-    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+    width: 350px;
+    max-width: 100%;
+    padding: 35px 30px;
     text-align: center;
-    animation: slideIn 1s ease-out, cardHover 0.3s ease-in-out;
-    transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
-    position: relative; /* Untuk animasi tambahan pada bawah card */
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease, box-shadow 0.4s ease, background 0.4s ease;
+    animation: slideIn 1s ease-out;
 }
 
-/* Efek saat card di-hover */
+/* Hover efek */
 .contact-card:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.2);
+    transform: translateY(-12px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.18);
 }
 
-/* Efek warna tambahan di bawah card */
+/* Efek gradasi bawah */
 .contact-card::after {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 10px;
-    background: 
-        linear-gradient(45deg, #ff7e5f, #feb47b),  /* 45deg Gradasi */
-        linear-gradient(90deg, #0A1ACD, #AAB1F8),  /* 90deg Gradasi */
-        linear-gradient(180deg, #34e89e, #0f3443); /* 180deg Gradasi */
-    background-position: top, center, bottom;
-    background-size: 100% 33%, 100% 33%, 100% 33%;
-    background-repeat: no-repeat;
-    border-radius: 0 0 15px 15px;
+    height: 12px;
+    background: linear-gradient(90deg, #667eea, #764ba2, #6b8dd6);
+    border-radius: 0 0 20px 20px;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 0.4s ease;
 }
 
-/* Saat card di-hover, efek gradasi muncul */
 .contact-card:hover::after {
     opacity: 1;
 }
 
-/* Gaya untuk gambar profil */
+/* Gambar profil */
 .contact-image {
-    width: 160px;
-    height: 160px;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
     object-fit: cover;
-    margin-bottom: 20px;
-    animation: bounce 2s ease-in-out infinite alternate, scaleUp 1.5s ease-in-out;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    animation: scaleUp 1.2s ease-out, bounce 2s ease-in-out infinite alternate;
 }
 
-/* Gaya untuk judul */
+/* Informasi teks */
 .contact-info h2 {
-    font-size: 26px;
-    margin-bottom: 15px;
-    color: #333;
-    font-weight: 600;
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
     animation: fadeInText 1.2s ease-out;
 }
 
-/* Gaya untuk deskripsi */
 .contact-info p {
-    font-size: 18px;
-    margin-bottom: 25px;
-    color: #666;
+    font-size: 17px;
+    color: #555;
+    line-height: 1.6;
     animation: fadeInText 1.4s ease-out;
 }
 
-/* Gaya untuk tombol WhatsApp */
-.whatsapp-button {
-    display: inline-block;
-    background-color: #25D366;
-    color: #fff;
-    padding: 14px 24px;
-    font-size: 18px;
-    font-weight: 500;
-    border-radius: 50px;
-    text-decoration: none;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    animation: fadeInButton 1.6s ease-out;
-}
-
-/* Efek hover pada tombol WhatsApp */
-.whatsapp-button:hover {
-    background-color: #128C7E;
-    transform: scale(1.1);
-}
-
-/* Animasi FadeIn untuk elemen masuk */
+/* Animasi */
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-/* Animasi slideIn untuk card */
-@keyframes slideIn {
-    from {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    to {
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-/* Animasi bounce untuk gambar */
-@keyframes bounce {
-    0% {
-        transform: translateY(0);
-    }
-    50% {
-        transform: translateY(-20px);
-    }
-    100% {
-        transform: translateY(0);
-    }
-}
-
-/* Animasi scaleUp untuk gambar */
-@keyframes scaleUp {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.05);
-    }
-}
-
-/* Animasi untuk fadeIn pada judul dan deskripsi */
-@keyframes fadeInText {
     from {
         opacity: 0;
         transform: translateY(20px);
@@ -645,8 +633,18 @@ button:hover {
     }
 }
 
-/* Animasi fadeIn untuk tombol WhatsApp */
-@keyframes fadeInButton {
+@keyframes slideIn {
+    from {
+        transform: scale(0.95);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInText {
     from {
         opacity: 0;
         transform: translateY(10px);
@@ -657,14 +655,136 @@ button:hover {
     }
 }
 
-/* Animasi card hover lebih interaktif */
-@keyframes cardHover {
+@keyframes bounce {
     0% {
         transform: translateY(0);
     }
     100% {
-        transform: translateY(-5px);
+        transform: translateY(-10px);
     }
+}
+
+@keyframes scaleUp {
+    from {
+        transform: scale(0.85);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Gaya untuk tombol WhatsApp */
+/*===============================
+=      WHATSAPP BUTTON         =
+===============================*/
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #25D366, #128C7E);
+  color: #fff;
+  padding: 14px 28px;
+  font-size: 17px;
+  font-weight: 600;
+  font-family: 'Segoe UI', sans-serif;
+  border-radius: 60px;
+  text-decoration: none;
+  box-shadow: 0 8px 24px rgba(37, 211, 102, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+  animation: fadeInButton 1.2s ease-out both;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.whatsapp-button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.05);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.whatsapp-button:hover {
+  background: linear-gradient(135deg, #128C7E, #075E54);
+  transform: scale(1.08);
+  box-shadow: 0 10px 28px rgba(18, 140, 126, 0.4);
+}
+
+/*===============================
+=       KEYFRAME ANIMATIONS    =
+===============================*/
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInButton {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.07);
+  }
+}
+
+@keyframes fadeInText {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes cardHover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-6px);
+  }
 }
 /* Footer Styling */
 .footer {
@@ -687,94 +807,123 @@ button:hover {
 }
 
 /* Layout Footer */
+/*===========================
+=         FOOTER           =
+===========================*/
+
 .footer-content {
-  max-width: 1200px;
+  max-width: 1300px;
   margin: auto;
+  padding: 60px 30px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 30px;
-  text-align: center;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  text-align: left;
+  background: linear-gradient(145deg, #1e1e2f, #12121a);
+  color: #e0e0e0;
+  border-top: 1px solid #2a2a3a;
+  border-bottom: 1px solid #2a2a3a;
 }
 
-/* Footer Brand */
+/*== BRAND ==*/
 .footer-brand h2 {
-  font-size: 24px;
+  font-size: 28px;
   color: #ffce00;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
 }
 
 .footer-brand p {
   font-size: 15px;
-  color: #ddd;
+  line-height: 1.7;
+  color: #c4c4c4;
+  max-width: 350px;
 }
 
-/* Links */
+/*== LINKS ==*/
 .footer-links ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .footer-links li {
-  margin: 8px 0;
+  margin: 10px 0;
 }
 
 .footer-links span {
-  text-decoration: none;
-  color: #ccc;
   font-size: 15px;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+  color: #b0b0b0;
+  text-decoration: none;
+  cursor: pointer;
+  display: inline-block;
+  transition: color 0.3s ease, transform 0.3s ease;
 }
 
 .footer-links span:hover {
   color: #ffce00;
+  transform: translateX(5px);
   text-shadow: 0 0 10px #ffce00;
 }
 
-/* Social Media Icons */
+/*== SOCIAL ICONS ==*/
 .footer-socials {
   display: flex;
-  justify-content: center;
-  gap: 20px;
+  gap: 18px;
+  margin-top: 10px;
 }
 
 .social-icon {
-  width: 40px;
-  height: 40px;
-  background-color: #2e2e3a;
-  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  background-color: #29293d;
+  border-radius: 12px;
   display: flex;
-  justify-content: center;
   align-items: center;
-  cursor: pointer;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  justify-content: center;
+  transition: all 0.3s ease;
+  background-size: 60%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.social-icon:hover {
+  transform: scale(1.15) rotate(8deg);
+  box-shadow: 0 6px 20px rgba(255, 206, 0, 0.45);
 }
 
 .social-icon.facebook {
   background-image: url('fb.png');
-  background-size: cover;
-}
-
-.social-icon.instagram {
-  background-image: url('ig.png');
-  background-size: cover;
 }
 
 .social-icon.whatsapp {
   background-image: url('wa.png');
-  background-size: cover;
 }
 
-.footer-socials .social-icon:hover {
-  transform: scale(1.1) rotate(15deg);
-  box-shadow: 0 4px 10px rgba(255, 206, 0, 0.4);
-}
-
-/* Footer Bottom */
+/*== FOOTER BOTTOM ==*/
 .footer-bottom {
   text-align: center;
-  margin-top: 30px;
+  padding: 25px 20px;
   font-size: 14px;
-  color: #aaa;
-  border-top: 1px solid #333;
-  padding-top: 20px;
+  background-color: #111118;
+  color: #888;
+  border-top: 1px solid #222;
+}
+
+/*== RESPONSIVE ==*/
+@media (max-width: 768px) {
+  .footer-content {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .footer-socials {
+    justify-content: center;
+  }
+  
+  .footer-brand p {
+    margin: auto;
+  }
 }
