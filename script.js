@@ -353,6 +353,40 @@ content: [
     "Ryuu pun mengajak ibu nya untuk berkelana tetapi ibu nya sudah tua, kemudian ryuu berkelana bersama 2 pengawal dan 1 mata², ditenga perjalanan dia menemukan kerajaan dipimpin oleh ras elf <br><br>Kerajaan elf sedang berperang sama kerajaan rosia dikarenakan kerajaaan rosia yang memulai duluan, kemudian ryuu ingin menolong kerajaan elf tersebut, lalu dia memerintahkan 1 mata mata untuk membawa pasukan kerajaan yang dipimpin oleh ryuu",
     "Pasukan kerajaan pun sampai, lalu ryuu memerintahkan ke pasukan nya untuk membantu kerajaan elf <br><br>//singkat cerita<br><br>Pasukan ryuu pun telah mengalahkan pasukan dari rosia, kemudian raja elf mendatangi si ryuu untuk menawarkan kerja sama,Kemudian dia diberi hadiah oleh kerajaan elf karena sudah membantu, hadiah nya adalah seorang cewe ras elf, bagaimana perjalanan ryuu selanjutnya?",
   ]
+},
+{
+  title: "Labirin Tak Berujung",
+  genre: "Fantasi",
+  image: "2p.png",
+  description: "Sebuah ilustrasi dinamis menampilkan Raka, pemuda berambut cokelat gelap dengan ekspresi tegar, memegang pedang berkilau di tangan kanannya. Ia berdiri di lorong labirin batu yang remang-remang, dindingnya retak dan memancarkan cahaya biru misterius. Di atasnya, judul “Labirin Tak Berujung” tertulis dengan huruf tebal dan terdistorsi, menggambarkan ketegangan dan petualangan yang menanti.",
+  chapters: [
+    "Bab 1: Terjebak di Labirin",
+    "Bab 2: Pertemuan Penjaga",
+    "Bab 3: Pilihan Pertama",
+    "Bab 4: Ujian Naga",
+    "Bab 5: Kemenangan dan Petunjuk",
+    "Bab 6: Pencurian Kunci",
+    "Bab 7: Membangun Tim",
+    "Bab 8: Penyusupan Malam",
+    "Bab 9: Gerbang Kegelapan",
+    "Bab 10: Hadapan Sang Pencipta",
+    "Bab 11: Pilihan Terakhir",
+    "Bab 12: Kembali atau Terus Berpetualang",
+  ],
+  content: [
+    "Raka membuka mata—ia bukan lagi di kamarnya, melainkan lorong batu tinggi dengan cahaya biru berdenyut di dinding. Pedang pixel di tangannya terasa nyata, dan suara sistem game berbisik, “Selamat datang, Penjelajah.” Dengan langkah ragu, ia menancapkan pedang di lantai marmer, menyadari bahwa ini bukan sekadar permainan.",
+    "Di persimpangan gelap, sosok berjubah hitam menunggu. “Tak ada jalan keluar tanpa membayar harga,” gumam Penjaga Labirin sambil menunjuk altar berhiaskan cahaya ungu. Raka menelan ludah, mempersiapkan hati untuk pilihan pertama yang akan menentukan jalannya",
+    "Raka berdiri di depan altar—di satu sisi tergeletak pedang legendaris, di sisi lain kristal sihir. Jemarinya bergetar saat menggapai kristal, merasakan arus magis mengalir. Dunia di sekitarnya berguncang, membuka jalan baru yang dipenuhi cahaya ungu.",
+    "Gua temaram menghadiahkan suara dengusan berat. Naga Bayangan muncul, mata onyxnya menatap tajam. Raka menghunus pedang dan merapal mantra pelindung, siap mengadu nyali. Denting pedang beradu dengan geraman naga—pertarungan hidup dan mati dimulai.",
+    "Setelah naga tersungkur, Raka melangkah keluar gua menuju kota terapung Serendell. Elang raksasa terbang melingkar di menara kristal, menyejukkan pandangan. Penduduk peri menyambutnya, membisikkan tentang Kunci Waktu yang tersembunyi sebagai kunci kebebasannya.",
+    "Malam tiba dengan hujan kabut—Kunci Waktu lenyap dari ruang suci. Raka terbangun di tanah dingin, menatap pelataran kosong. Keraguan melingkupi hati: apakah ia terlalu lemah menjaga kunci itu?",
+    "Fajar membawa semangat baru. Raka mengumpulkan tim—penyihir muda, prajurit berbaju besi, dan pencuri gesit. Di tenda rahasia, mereka merancang rencana untuk menyusup ke Kastil Kegelapan dan merebut kembali Kunci Waktu.",
+    "Di bawah sinar bintang, tim Raka merayap di tembok kastil. Jebakan tanah runtuh dan patroli bayangan menanti di setiap sudut. Nafas tertahan kala mereka menyeberang halaman penuh bayangan hitam.",
+    "Gerbang besi hitam terbuka oleh mantra pendiri. Pasukan bayangan menyerbu dengan pedang dan sihir gelap. Raka memimpin serangan, melindungi sahabatnya yang terjebak dalam pengkhianatan mantra. Percikan api dan kilatan sihir mewarnai malam.",
+    "Di ruang rahasia, entitas bercahaya berdiri di atas podium terbang. “Mengapa kau terjebak di sini?” suaranya bergema. Raka menatap tegar, pedang dan kristalnya di tangan—ini saatnya menuntut jawaban dan kebebasannya.",
+    "Di gerbang cahaya putih, Kunci Waktu berputar di udara. Namun di sampingnya, sahabatnya terkulai lemah. Raka terdiam—antara mengambil kunci dan keluar, atau mengorbankan kebebasan demi menyelamatkan teman. Detik-detik terakhir menentukan segalanya.",
+    "Headset terlepas di pagi buta—Raka terjaga di kamarnya dengan pedang pixel di meja. Di layar monitor, judul “Labirin Tak Berujung” berkedip pelan. Senyum samar menghiasi wajahnya: apakah ini akhir, atau awal babak baru yang menanti? realitas dan dunia maya kini bersatu dalam satu petualangan tanpa ujung."
+  ]
 }
 ];
 
